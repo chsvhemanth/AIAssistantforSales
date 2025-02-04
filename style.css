@@ -1,0 +1,194 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,800;1,600&display=swap');
+
+/* Global styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #c221a7; /* Navbar background color */
+    color: #fff; /* Text color */
+    position: sticky; /* Navbar sticks to the top */
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo style */
+header.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Navigation menu styles */
+header.navbar nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+}
+
+header.navbar nav ul li {
+    display: inline-block;
+}
+
+header.navbar nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+header.navbar nav ul li a:hover {
+    color: #ffdd40; /* Highlight color on hover */
+}
+
+
+
+
+/* General Styling */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Section */
+.input-section textarea,
+.negotiation-section textarea {
+    width: 100%;
+    max-width: 800px;
+    height: 100px;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    resize: none;
+}
+
+.input-section .button,
+.negotiation-section .button,
+.summary-section .button {
+    background-color: #c221a7;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.input-section .button:hover,
+.negotiation-section .button:hover,
+.summary-section .button:hover {
+    background-color: #c221a7;
+}
+
+/* Summary Section */
+.summary-section {
+    margin-top: 30px;
+}
+
+#summaryOutput {
+    font-family: Arial, sans-serif;
+    white-space: pre-wrap;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    max-width: 800px;
+    max-height: 300px;
+    overflow-y: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Negotiation Section */
+.negotiation-section {
+    margin-top: 30px;
+}
+
+.suggestion-box {
+    margin-top: 15px;
+    background-color: #f0f4f8;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 800px;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Analysis Section */
+.response-container {
+    margin-top: 30px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 800px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background-color: #c221a7;
+    color: white;
+    padding: 15px;
+    margin-top: 40px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.footer a {
+    color: #c8e6c9;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    header.navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    header.navbar nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    header.navbar .logo {
+        margin-bottom: 1rem;
+    }
+}
